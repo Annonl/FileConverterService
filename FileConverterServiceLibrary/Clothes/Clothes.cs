@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace FileConverterServiceLibrary.Clothes
 {
-    class Clothes
+    abstract class Clothes
     {
+        int cost;
+        List<Size> avalibleSize;
+        int productID;
+        int density;
+        string name;
     }
 }

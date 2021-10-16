@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FileConverterServiceLibrary
 {
-    public class Class1
+    public class Shop
     {
+        List<Category> categories;
+
     }
 }
