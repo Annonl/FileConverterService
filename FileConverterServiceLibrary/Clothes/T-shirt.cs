@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace FileConverterServiceLibrary.Clothes
 {
-    class T_shirt : Clothes
+    [Serializable]
+    [XmlRoot(ElementName = "T_shirt")]
+    public class T_Shirt : Clothes
     {
 
     }

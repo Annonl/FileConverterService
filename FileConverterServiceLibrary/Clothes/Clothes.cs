@@ -1,17 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace FileConverterServiceLibrary.Clothes
 {
-    abstract class Clothes
+    [Serializable]
+    [XmlInclude(typeof(Polo))]
+    [XmlInclude(typeof(T_shirt))]
+    [XmlInclude(typeof(Pant))]
+    [XmlInclude(typeof(Sweatshirt))]
+    [XmlInclude(typeof(Short))]
+    [XmlInclude(typeof(Shirt))]
+    public abstract class Clothes
     {
-        int cost;
-        List<Size> avalibleSize;
-        int productID;
-        int density;
-        string name;
+        [XmlAttribute]
+        public string Name { get; set; }
+        [XmlAttribute] public int ProductId { get; set; }
+        public int Cost { get; set; }
+
+        public int Density { get; set; }
+        public List<Size> AvalibleSize { get; set; }
     }
 }

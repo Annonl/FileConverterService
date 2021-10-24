@@ -1,6 +1,12 @@
-﻿namespace FileConverterServiceLibrary.Clothes
+﻿using System;
+using System.Xml.Serialization;
+
+namespace FileConverterServiceLibrary.Clothes
 {
-    internal class Size
+    [Serializable]
+    public class Size
     {
+        [XmlAttribute]
+        public string SizeName { get; set; }
     }
 }

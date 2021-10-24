@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace FileConverterServiceLibrary
 {
+    [Serializable]
     public class Shop
     {
-        List<Category> categories;
-
+        public Category[] Categories { get; set; }
     }
 }
