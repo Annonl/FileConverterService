@@ -9,7 +9,7 @@ namespace FileConverterServiceLibrary
     public class Category
     {
         [XmlArrayItem(typeof(Polo))]
-        [XmlArrayItem(typeof(T_shirt))]
+        [XmlArrayItem(typeof(T_Shirt))] 
         [XmlArrayItem(typeof(Pant))]
         [XmlArrayItem(typeof(Sweatshirt))]
         [XmlArrayItem(typeof(Short))]

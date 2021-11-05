@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
+using System.Text.Json;
 
 namespace FileConverterServiceLibrary
 {
-    class SerializationJSON
+    public class SerializationJSON
     {
+        public void SerializeObject(string fileName, Shop shop)
+        {
+            string jsonString = JsonSerializer.Serialize(shop);
+            File.WriteAllText(fileName, jsonString);
+        }
     }
 }

@@ -6,7 +6,7 @@ namespace FileConverterServiceLibrary.Clothes
 {
     [Serializable]
     [XmlInclude(typeof(Polo))]
-    [XmlInclude(typeof(T_shirt))]
+    [XmlInclude(typeof(T_Shirt))]
     [XmlInclude(typeof(Pant))]
     [XmlInclude(typeof(Sweatshirt))]
     [XmlInclude(typeof(Short))]
