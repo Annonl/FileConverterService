@@ -40,6 +40,14 @@ namespace FileConvertService
                     SerializationJSON serializationJson = new SerializationJSON();
                     serializationJson.SerializeObject(secondFile,shop);
                 }
+                else if (firstFile.Split('.').Last() == "json")
+                {
+                    SerializationJSON serializationJson = new SerializationJSON();
+                    var shop = serializationJson.DeserializeObject(firstFile);
+                    shop = ChangeStructureShop.ChangeForXml(shop);
+                    DeserializeXml sDeserializeXml = new DeserializeXml();
+                    sDeserializeXml.SerializeObject(secondFile, shop);
+                }
             }
             else
             {

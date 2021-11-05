@@ -14,5 +14,12 @@ namespace FileConverterServiceLibrary
                 shop = s;
             return shop;
         }
+
+        public void SerializeObject(string fileName, Shop shop)
+        {
+            XmlSerializer formatter = new XmlSerializer(typeof(Shop));
+            using FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate);
+            formatter.Serialize(fs, shop);
+        }
     }
 }

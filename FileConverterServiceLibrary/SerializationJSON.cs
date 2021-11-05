@@ -15,5 +15,17 @@ namespace FileConverterServiceLibrary
             string jsonString = JsonConvert.SerializeObject(shop, settings);
             File.WriteAllText(fileName, jsonString);
         }
+
+        public Shop DeserializeObject(string fileName)
+        {
+            var settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                Formatting = Formatting.Indented
+            };
+            string jsonString = File.ReadAllText(fileName);
+            Shop shop = JsonConvert.DeserializeObject<Shop>(jsonString, settings);
+            return shop;
+        }
     }
 }
