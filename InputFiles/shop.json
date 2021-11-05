@@ -1,0 +1,298 @@
+{
+  "Categories": [
+    {
+      "Clotheses": [
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.T_shirt, FileConverterServiceLibrary",
+          "Name": "White",
+          "ProductId": 0,
+          "Cost": 1100,
+          "Density": 170,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            },
+            {
+              "SizeName": "2XL"
+            },
+            {
+              "SizeName": "3XL"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.T_shirt, FileConverterServiceLibrary",
+          "Name": "Black",
+          "ProductId": 0,
+          "Cost": 1100,
+          "Density": 170,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.T_shirt, FileConverterServiceLibrary",
+          "Name": "BlackSquare",
+          "ProductId": 0,
+          "Cost": 1850,
+          "Density": 170,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            }
+          ]
+        }
+      ],
+      "NameCategory": "cost less than 2000",
+      "CategoryId": 0
+    },
+    {
+      "Clotheses": [
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Sweatshirt, FileConverterServiceLibrary",
+          "Name": "SimpleBlack",
+          "ProductId": 0,
+          "Cost": 2000,
+          "Density": 220,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            },
+            {
+              "SizeName": "2XL"
+            },
+            {
+              "SizeName": "3XL"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Sweatshirt, FileConverterServiceLibrary",
+          "Name": "SHOT.White",
+          "ProductId": 0,
+          "Cost": 2600,
+          "Density": 320,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Short, FileConverterServiceLibrary",
+          "Name": "BlackShort",
+          "ProductId": 0,
+          "Cost": 2000,
+          "Density": 0,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            },
+            {
+              "SizeName": "2XL"
+            },
+            {
+              "SizeName": "3XL"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Polo, FileConverterServiceLibrary",
+          "Name": "WhitePolo",
+          "ProductId": 0,
+          "Cost": 2350,
+          "Density": 0,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Polo, FileConverterServiceLibrary",
+          "Name": "SirqlePolo",
+          "ProductId": 0,
+          "Cost": 2350,
+          "Density": 0,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "XL"
+            },
+            {
+              "SizeName": "2XL"
+            }
+          ]
+        }
+      ],
+      "NameCategory": "cost between 2000 and 3000",
+      "CategoryId": 1
+    },
+    {
+      "Clotheses": [
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Pant, FileConverterServiceLibrary",
+          "Name": "BlackPants",
+          "ProductId": 0,
+          "Cost": 3350,
+          "Density": 0,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Shirt, FileConverterServiceLibrary",
+          "Name": "WhiteClassic",
+          "ProductId": 0,
+          "Cost": 3250,
+          "Density": 190,
+          "AvalibleSize": [
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            },
+            {
+              "SizeName": "2XL"
+            }
+          ]
+        },
+        {
+          "$type": "FileConverterServiceLibrary.Clothes.Shirt, FileConverterServiceLibrary",
+          "Name": "SquareClassic",
+          "ProductId": 0,
+          "Cost": 3250,
+          "Density": 0,
+          "AvalibleSize": [
+            {
+              "SizeName": "XS"
+            },
+            {
+              "SizeName": "S"
+            },
+            {
+              "SizeName": "M"
+            },
+            {
+              "SizeName": "L"
+            },
+            {
+              "SizeName": "XL"
+            },
+            {
+              "SizeName": "2XL"
+            }
+          ]
+        }
+      ],
+      "NameCategory": "cost more than 3000",
+      "CategoryId": 2
+    }
+  ]
+}

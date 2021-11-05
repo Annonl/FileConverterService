@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Shop>
+  <Categories>
+    <Category NameCategory ="t-shirts" CategoryID="0">
+      <Clotheses>
+        <T_shirt Name="White" ProductID="0">
+          <Cost>1100</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+            <Size SizeName="2XL"/>
+            <Size SizeName="3XL"/>
+          </AvalibleSize>
+          <Density>170</Density>
+        </T_shirt>
+        <T_shirt Name="Black" ProductID="1">
+          <Cost>1100</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+          </AvalibleSize>
+          <Density>170</Density>
+        </T_shirt>
+        <T_shirt Name="BlackSquare" ProductID="2">
+          <Cost>1850</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+          </AvalibleSize>
+          <Density>170</Density>
+        </T_shirt>
+      </Clotheses>
+    </Category>
+    <Category NameCategory ="sweatshirts" CategoryID="1">
+      <Clotheses>
+        <Sweatshirt Name="SimpleBlack" ProductID="3">
+          <Cost>2000</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+            <Size SizeName="2XL"/>
+            <Size SizeName="3XL"/>
+          </AvalibleSize>
+          <Density>220</Density>
+        </Sweatshirt>
+        <Sweatshirt Name="SHOT.White" ProductID="4">
+          <Cost>2600</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+          </AvalibleSize>
+          <Density>320</Density>
+        </Sweatshirt>
+      </Clotheses>
+    </Category>
+    <Category NameCategory ="pants-shorts" CategoryID="2">
+      <Clotheses>
+        <Pant Name="BlackPants" ProductID="5">
+          <Cost>3350</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+          </AvalibleSize>
+        </Pant>
+        <Short Name="BlackShort" ProductID="6">
+          <Cost>2000</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+            <Size SizeName="2XL"/>
+            <Size SizeName="3XL"/>
+          </AvalibleSize>
+        </Short>
+      </Clotheses>
+    </Category>
+    <Category NameCategory ="shirts" CategoryID="3">
+      <Clotheses>
+        <Shirt Name="WhiteClassic" ProductID="7">
+          <Cost>3250</Cost>
+          <AvalibleSize>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+            <Size SizeName="2XL"/>
+          </AvalibleSize>
+          <Density>190</Density>
+        </Shirt>
+        <Shirt Name="SquareClassic" ProductID="8">
+          <Cost>3250</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+            <Size SizeName="XL"/>
+            <Size SizeName="2XL"/>
+          </AvalibleSize>
+        </Shirt>
+      </Clotheses>
+    </Category>
+    <Category NameCategory ="polo" CategoryID="4">
+      <Clotheses>
+        <Polo Name="WhitePolo" ProductID="9">
+          <Cost>2350</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="L"/>
+          </AvalibleSize>
+        </Polo>
+        <Polo Name="SirqlePolo" ProductID="10">
+          <Cost>2350</Cost>
+          <AvalibleSize>
+            <Size SizeName="XS"/>
+            <Size SizeName="S"/>
+            <Size SizeName="M"/>
+            <Size SizeName="XL"/>
+            <Size SizeName="2XL"/>
+          </AvalibleSize>
+        </Polo>
+      </Clotheses>
+    </Category>
+  </Categories>
+</Shop>
