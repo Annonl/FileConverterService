@@ -8,6 +8,10 @@ namespace FileConverterServiceLibrary
         {
             Shop newShop = new Shop();
             newShop.Categories = new Category[3];
+            for (int i = 0; i < newShop.Categories.Length; i++)
+            {
+                newShop.Categories[i] = new Category();
+            }
             newShop.Categories[0].CategoryId = 0;
             newShop.Categories[0].NameCategory = "cost less than 2000";
             newShop.Categories[1].CategoryId = 1;

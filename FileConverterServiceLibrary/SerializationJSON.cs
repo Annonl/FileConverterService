@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace FileConverterServiceLibrary
 {
@@ -7,7 +7,12 @@ namespace FileConverterServiceLibrary
     {
         public void SerializeObject(string fileName, Shop shop)
         {
-            string jsonString = JsonSerializer.Serialize(shop);
+            var settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                Formatting = Formatting.Indented
+            };
+            string jsonString = JsonConvert.SerializeObject(shop, settings);
             File.WriteAllText(fileName, jsonString);
         }
     }

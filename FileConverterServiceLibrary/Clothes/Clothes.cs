@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Xml.Serialization;
 
 namespace FileConverterServiceLibrary.Clothes
 {
     [Serializable]
     [XmlInclude(typeof(Polo))]
-    [XmlInclude(typeof(T_Shirt))]
+    [XmlInclude(typeof(T_shirt))]
     [XmlInclude(typeof(Pant))]
     [XmlInclude(typeof(Sweatshirt))]
     [XmlInclude(typeof(Short))]
