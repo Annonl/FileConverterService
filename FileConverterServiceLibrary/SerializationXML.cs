@@ -3,9 +3,9 @@ using System.Xml.Serialization;
 
 namespace FileConverterServiceLibrary
 {
-    public class DeserializeXml
+    public class SerializationXML
     {
-        public Shop DeserializeObject(string filename)
+        public static Shop DeserializeObject(string filename)
         {
             Shop shop = null;
             var serializer = new XmlSerializer(typeof(Shop));
@@ -15,10 +15,10 @@ namespace FileConverterServiceLibrary
             return shop;
         }
 
-        public void SerializeObject(string fileName, Shop shop)
+        public static void SerializeObject(string fileName, Shop shop)
         {
-            XmlSerializer formatter = new XmlSerializer(typeof(Shop));
-            using FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate);
+            var formatter = new XmlSerializer(typeof(Shop));
+            using var fs = new FileStream(fileName, FileMode.OpenOrCreate);
             formatter.Serialize(fs, shop);
         }
     }

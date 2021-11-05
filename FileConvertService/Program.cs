@@ -1,14 +1,13 @@
-﻿using System;
-using System.CodeDom.Compiler;
+﻿using FileConverterServiceLibrary;
+using System;
 using System.IO;
 using System.Linq;
-using FileConverterServiceLibrary;
 
 namespace FileConvertService
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string firstFile, secondFile;
             switch (args.Length)
@@ -34,19 +33,19 @@ namespace FileConvertService
             {
                 if (firstFile.Split('.').Last() == "xml")
                 {
-                    DeserializeXml sDeserializeXml = new DeserializeXml();
-                    var shop = sDeserializeXml.DeserializeObject(firstFile);
+                    var shop = SerializationXML.DeserializeObject(firstFile);
                     shop = ChangeStructureShop.ChangeForJson(shop);
-                    SerializationJSON serializationJson = new SerializationJSON();
-                    serializationJson.SerializeObject(secondFile,shop);
+                    SerializationJSON.SerializeObject(secondFile,shop);
                 }
                 else if (firstFile.Split('.').Last() == "json")
                 {
-                    SerializationJSON serializationJson = new SerializationJSON();
-                    var shop = serializationJson.DeserializeObject(firstFile);
+                    var shop = SerializationJSON.DeserializeObject(firstFile);
                     shop = ChangeStructureShop.ChangeForXml(shop);
-                    DeserializeXml sDeserializeXml = new DeserializeXml();
-                    sDeserializeXml.SerializeObject(secondFile, shop);
+                    SerializationXML.SerializeObject(secondFile, shop);
+                }
+                else
+                {
+                    Console.WriteLine("You must enter files with xml or json extension. Please, try again.");
                 }
             }
             else

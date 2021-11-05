@@ -19,6 +19,5 @@ namespace FileConverterServiceLibrary
         public string NameCategory { get; set; }
         [XmlAttribute]
         public int CategoryId { get; set; }
-
     }
 }

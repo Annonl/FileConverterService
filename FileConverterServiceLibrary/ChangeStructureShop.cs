@@ -8,21 +8,18 @@ namespace FileConverterServiceLibrary
     {
         public static Shop ChangeForJson(Shop shop)
         {
-            Shop newShop = new Shop();
-            newShop.Categories = new Category[3];
-            for (int i = 0; i < newShop.Categories.Length; i++)
+            var newShop = new Shop
             {
-                newShop.Categories[i] = new Category();
-            }
-            newShop.Categories[0].CategoryId = 0;
-            newShop.Categories[0].NameCategory = "cost less than 2000";
-            newShop.Categories[1].CategoryId = 1;
-            newShop.Categories[1].NameCategory = "cost between 2000 and 3000";
-            newShop.Categories[2].CategoryId = 2;
-            newShop.Categories[2].NameCategory = "cost more than 3000";
-            foreach (var t in newShop.Categories)
+                Categories = new Category[]
+                {
+                    new() { CategoryId = 0, NameCategory = "cost less than 2000" },
+                    new() { CategoryId = 1, NameCategory = "cost between 2000 and 3000" },
+                    new() { CategoryId = 3, NameCategory = "cost more than 3000" }
+                }
+            };
+            foreach (var category in newShop.Categories)
             {
-                t.Clotheses = new Clothes.Clothes[0];
+                category.Clotheses = Array.Empty<Clothes.Clothes>();
             }
             foreach (var shopCategory in shop.Categories)
             {
@@ -44,16 +41,17 @@ namespace FileConverterServiceLibrary
             }
             return newShop;
         }
-
         public static Shop ChangeForXml(Shop shop)
         {
-            Shop newShop = new Shop();
-            newShop.Categories = new Category[]
+            var newShop = new Shop
             {
-                new() { NameCategory = "T_shirt", CategoryId = 0 },
-                new() { NameCategory = "Sweatshirt", CategoryId = 1 },
-                new() { NameCategory = "Pant", CategoryId = 2 }, new() { NameCategory = "Short", CategoryId = 3 },
-                new() { NameCategory = "Shirt", CategoryId = 4 }, new() { NameCategory = "Polo", CategoryId = 5 }
+                Categories = new Category[]
+                {
+                    new() { NameCategory = "T_shirt", CategoryId = 0 },
+                    new() { NameCategory = "Sweatshirt", CategoryId = 1 },
+                    new() { NameCategory = "Pant", CategoryId = 2 }, new() { NameCategory = "Short", CategoryId = 3 },
+                    new() { NameCategory = "Shirt", CategoryId = 4 }, new() { NameCategory = "Polo", CategoryId = 5 }
+                }
             };
             foreach (var newShopCategory in newShop.Categories)
             {
